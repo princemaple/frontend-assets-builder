@@ -13,7 +13,8 @@ RUN touch webpack.config.json
 RUN npm install -g webpack
 
 RUN npm install webpack style-loader css-loader postcss-loader \
-    autoprefixer precss extract-text-webpack-plugin \
+    postcss-import postcss-simple-vars postcss-nested \
+    autoprefixer extract-text-webpack-plugin \
     html-loader ngtemplate-loader \
     babel-loader ng-annotate-loader
 
